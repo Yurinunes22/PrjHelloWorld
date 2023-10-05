@@ -1,0 +1,7 @@
+p{/*<- seletor*/
+    color: rgb(162, 0, 255); /*propiedadees: valor*/
+}
+
+
+
+table, th, td {border: 3px solid black; background: #5c5a5c; border-radius: 10px;}
