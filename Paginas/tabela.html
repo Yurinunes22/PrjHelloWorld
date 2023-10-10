@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/estilo.css">
     <title>Document</title>
+    <style>
+        thead {
+            color: green;
+        }
+
+        tbody {
+            color: blue;
+        }
+
+        tfoot {
+            color: red;
+        }
+
+        table th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <!--<style>table, th, td {border: 3px solid black; background: #ff00f2; border-radius: 10px;}</style>-->
+
 <body>
-    <table  style="width: 100%;">
+    <table style="width: 30%;">
+        <thead>
+            <tr>
+                <th>Santos</th>
+                <th>Santos</th>
+                <th>Santos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SERIE B</td>
+                <td>SERIE B</td>
+                <td>SERIE B</td>
+            </tr>
+            <tr>
+                <td>BYE BYE</td>
+                <td>BYE BYE</td>
+                <td>BYE BYE</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td>CAIU</td>
+                <td>CAIU</td>
+                <td>CAIU</td>
+            </tr>
+        </tfoot>
+        </tbody>
 
-        <tr>
-            <th>Santos</th>
-            <th>Santos</th>
-            <th>Santos</th>
-        </tr>
-        <tr>
-            <td>SERIE B</td>
-            <td>SERIE B</td>
-            <td>SERIE B</td>
-        </tr>
-        <tr>
-            <td>BYE BYE</td>
-            <td>BYE BYE</td>
-
-            <td>BYE BYE</td>
-        
-        </tr>
     </table>
- <nav>
-    <a href="../index.html">Home</a>
-</nav>   
-    
-</body>
-</html>
+    <nav>
+        <a href="../index.html">Home</a>
+    </nav>
 
+</body>
+
+</html>
