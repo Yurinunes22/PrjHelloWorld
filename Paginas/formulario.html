@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,13 @@
 
 <body>
     <h1>Formulario do Torcedor</h1>
+    <form action="formulario.php" method="get">
     <fieldset>
         <legend>Dados do torcedor</legend>
-    <form action="formulario.php" method="get">
+  
         <div class="componente-form">
             <label for="nome-front">Nome:</label>
-            <input type="text" name="nome" id="nome-front">
+            <input class="input-text" type="text" name="nome" id="nome-front">
         </div>
 
         <div class="componente-form">
@@ -31,26 +32,32 @@
         </div>
         <div class="componente-form">
             <label for="email-front">E-mail:</label>
-            <input type="email" name="email" id="email-front" required>
+            <input type="text" name="email" id="email-front" required>
         </div>
 
         <div class="componente-form">
             <label>Gênero:</label>
             <br>
-            <input type="radio" value="masculino" name="genero " id="genero-mas-front">
+            <input type="radio" value="masculino" name="genero" id="genero-mas-front">
             <label for="genero-mas-front">Masculino</label>
             <br>
-            <input type="radio" value="feminino" name="genero " id="genero-fem-front">
+            <input type="radio" value="feminino" name="genero" id="genero-fem-front">
             <label for="genero-fem-front">Feminino</label>
             <br>
             <input type="radio" value="indefinido" name="genero" id="genero-ind-front">
             <label for="genero-ind-front">Indefinido</label>
         </div>
-        <div>
+        <div class="componente-form">
             <label>Opções:</label>
+            <br>
             <input type="checkbox" name="socio-torcedor" id="socio-torcedor-front">
             <label for="socio-torcedor-front">Possuo Cartão de sócio torcedor</label>
+            <br>
+            <input type="checkbox" name="socio-torcedor" id="socio-torcedor-front">
+            <label for="socio-torcedor-front">Vou ao estádio pelo menos uma vez por mês</label>
+
         </div>
+
         <div class="componente-form">
             <select name="time" id="time-front">
                 <option>Escolha seu time...</option>
@@ -74,9 +81,72 @@
             <input type="submit" value="Enviar">
         </div>
     </fieldset>
-      <br>
+      
     <fieldset>
-           <legend>Não lembro</legend>
+           <legend>Dados do seu prêmio</legend>
+           <div class="componente-form">
+               <label for="time-internacional-front">Time do coração (internacional)</label>
+               <input type="text" name="time-internacional" id="time-internacional-front">
+           </div>
+           <div class="componente-form">
+               <label>Qual final internacional gostaria de assistir?</label>
+               <br>
+               <input type="radio" value= "UEFA'" name="final" id="final-front">
+               <label >UEFA</label>
+               <br>
+               <input type="radio" value= "libertadores" name="final" id="final-front">
+               <label >Libertadores</label>
+               <br>
+               <input type="radio" value= "campeonato nacional" name="final" id="final-front">
+               <label>Campeonato Nacional</label>
+           </div>
+           <div class="componente-form">
+               <label>Na premiação</label>
+               <br>
+               <input type="checkbox" name="visita-estadio" id="visita-estadio-front">
+               <label>incluir visita ao estádio</label>
+               <input type="checkbox" name="visita-galeria" id="visita-galeria-front">
+               <label>incluir visita a galeria de títulos do clube</label>
+           </div>
+           <div class="componente-form">
+                <label >Transporte (será pago pelo premiado!)</label>
+                <br>
+                <input type="checkbox" name="terrestre" id="terreste-front">
+                <label >Terrestre</label>
+                <br>
+                <input type="checkbox" name="terrestre" id="terreste-front">
+                <label >Aéreo</label>
+           </div>
+           <div class="componente-form">
+               <label>Forma de Pagamento</label>
+               <br>
+               <input type="radio" value= "a-vista" name="pagamento" id="a-vista-front">
+               <label>Á vista</label>
+               <br>
+               <input type="radio" value= "debito" name="pagamento" id="debito-front">
+               <label>Débito</label>
+               <br>
+               <input type="radio" value= "boleto" name="pagamento" id="boleto-front">
+               <label>Boleto</label>
+           </div>
+           <div class="componente-form">
+               <label>Portador de necessidades especiais</label>
+               <br>
+               <input type="radio" value= "sim" name="necessidades-especiais" id="sim-especiais-front">
+               <label for="sim-especiais-front">Sim</label>
+               <br>
+               <input type="radio" value= "nao" name="necessidades-especiais" id="nao-especiais-front">
+               <label for="nao-especiais-front">Não</label>
+               <br>
+               <label >Quais necessidades?</label>
+               <br>
+               <textarea name="necessidades" id="" cols="30" rows="10" placeholder="Digite Aqui" ></textarea>
+           </div>
+           <div class="componente-form">
+               <label>Observações gerais</label>
+               <br>
+                <textarea name="Observacoes gerais" id="" cols="30" rows="10" placeholder="Digite Aqui"></textarea>
+           </div>
     </fieldset>
 
     </form>
